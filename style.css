@@ -94,8 +94,8 @@ header .overlay {
 }
 
 main {
-    min-height: 100vh;
-    padding: 50px;
+    /* min-height: 100vh; */
+    /* padding: 50px; */
     font-family: 'Montserrat';
     font-size: 16px;
 }
