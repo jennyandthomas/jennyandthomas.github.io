@@ -36,83 +36,68 @@
 <body>
     <header>
         <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <video playsinline autoplay muted loop>
             <source src="images/J+T2.mp4" type="video/mp4">
         </video>
-        <div class="container h-100">
-            <div class="d-flex h-100 text-center align-items-center">
-                <div class="w-100 text-white title">
-                    <h1 class="display-3">jenny & thomas</h1>
-                    <p class="lead mb-0">august 7, 2021</p>
-                    <a href="#rsvp"><button class="btn btn-primary">RSVP</button></a>
-                    <!-- <div class="mouse_scroll">
-                        <div class="mouse">
-                            <div class="wheel"></div>
-                        </div>
-                        <div>
-                            <span class="m_scroll_arrows unu"></span>
-                            <span class="m_scroll_arrows doi"></span>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
+        <div class="title">
+            <h1>jenny & thomas</h1>
+            <h2>august 7, 2021</h2>
+            <a href="#rsvp"><button class="btn btn-primary">RSVP & Registry</button></a>
         </div>
     </header>
 
     <main>
-        <!-- navigation -->
-        <!-- <div id="navwrapper">
-            <div id="navbar" class="center nav justify-content-center">
-                <a class="nav-link" href="#weddingday">wedding day</a>
-                <a class="nav-link" href="#ourstory">our story</a>
-                <a class="nav-link" href="#photogallery">photo gallery</a>
-                <a class="nav-link" href="#minneapolis">minneapolis</a>
-                <a class="nav-link" href="#rsvp">RSVP</a>
-                <a class="nav-link" href="#registry">registry</a>
-            </div>
-        </div> -->
-
-        <section id="weddingday" class="xtarget">
+        <section id="weddingday">
             <h2 class="title">wedding day</h2>
-                <div class="card wedding-day-card">
-                    <div class="card-body">
-                        <p class="wedding-date">august 7, 2021</p>
-                        <p class="card-text">Please join us for the ceremony, cocktail hour, dinner, and music at our home in Minneapolis, Minnesota</p>
-                        
-                    </div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.622571601229!2d-93.21894278446626!3d44.91067347909835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f629025e531979%3A0xc24e7e596a8add1f!2s5100%2039th%20Ave%20S%2C%20Minneapolis%2C%20MN%2055417!5e0!3m2!1sen!2sus!4v1604884533874!5m2!1sen!2sus"
-                        class="wedding-day-map" width="900" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                </div>
+            <div class="wedding-day-card">
+                <p class="wedding-day-text">We are excited to host our invited guests for a wedding ceremony, cocktail hour, dinner, dessert, music and merriment at our home in Minneapolis, Minnesota.</p>
+                <p class="wedding-date">August 7, 2021</p>
+                <p class="wedding-day-text">Ceremony will commence at 5 p.m.</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.622571601229!2d-93.21894278446626!3d44.91067347909835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f629025e531979%3A0xc24e7e596a8add1f!2s5100%2039th%20Ave%20S%2C%20Minneapolis%2C%20MN%2055417!5e0!3m2!1sen!2sus!4v1604884533874!5m2!1sen!2sus"
+                    class="wedding-day-map" width="900" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
         </section>
 
         <img class="divider" src="images/flowers2.png" alt="flowers" />
         
-        <section id="rsvp" class="xtarget">
+        <section id="rsvp">
             <h2 class="title">RSVP + Registry</h2>
+            <p class="registry-text">Open the RSVP form:</p>
             <button class="btn accordion">
-                Open the RSVP form
+                RSVP
             </button>
             <div class="panel flex-md-row">
                 <iframe
+                    class="rsvp-form"
                     src="https://docs.google.com/forms/d/e/1FAIpQLSdtlWaFmqIm7vQKhVEwDt4zwllq0A7NMhNumxpENlNSpTvBcw/viewform?embedded=true"
                     width="1080" height="1086" frameborder="0" marginheight="0" marginwidth="0">Loading…
                 </iframe>
             </div>
+            <p class="registry-text">View our registry:</p>
+            <a href="https://www.westelm.com/registry/pv72js6mmz/registry-list.html" target="_blank"><button class="btn accordion">
+                West Elm
+            </button></a>
             <a href="https://www.williams-sonoma.com/registry/pv72js6mmz/registry-list.html?cm_type=lnav" target="_blank"><button class="btn accordion">
-                View our registry
+                Williams Sonoma
             </button></a>
         </section>
 
         <img class="divider" src="images/flowers2.png" alt="flowers" />
             
-        <section id="ourstory" class="xtarget">
+        <section id="ourstory">
             <h2 class="title">our story</h2>
-            <div class="story-container">
-                <h3>according to Thomas</h3>
-                <img class="story-img" src="images/thomas-2.jpg" data-toggle="modal" data-target=".thomas-version" />
-            </div>
+            <div class="stories-wrapper">
+                <div class="story-container">
+                    <h3>according to Thomas</h3>
+                    <img class="story-img" src="images/thomas-2.jpg" data-toggle="modal" data-target=".thomas-version" />
+                </div>
+                <div class="story-container">
+                    <h3>according to Jenny</h3>
+                    <img class="story-img" src="images/jenny-2.jpg" data-toggle="modal" data-target=".jenny-version" />
+                </div>
+             </div>
             <div class="modal fade thomas-version" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-lg">
@@ -148,13 +133,9 @@
                         <p>As our wedding day approaches, I can’t help but be hopeful. We’ve always been awkward, and our plans have changed, but
                         we’ve always found a way to make it work perfectly together. I can’t wait to share another beautiful experience with
                         Jenny and the people we care about most.</p>
+                        <button class="btn" data-toggle="modal" data-target=".thomas-version">Close</button>
                     </div>
                 </div>
-            </div>
-
-            <div class="story-container">
-                <h3>according to Jenny</h3>
-                <img class="story-img" src="images/jenny-2.jpg" data-toggle="modal" data-target=".jenny-version" />
             </div>
             <div class="modal fade jenny-version" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
                 aria-hidden="true">
@@ -190,6 +171,7 @@
                         puppy. And after all of that, we’re finally ready to make it official- six years later in early August. I’m so thankful
                         to have found him and I can’t wait to finally call him my husband; a title I think he has proved worthy of for a long
                         time.</p>
+                        <button class="btn" data-toggle="modal" data-target=".jenny-version">Close</button>
                     </div>
                 </div>
             </div>
@@ -198,7 +180,7 @@
 
         <img class="divider" src="images/flowers2.png" alt="flowers" />
 
-        <section id="photogallery" class="xtarget">
+        <section id="photogallery">
             <h2 class="title">photo gallery</h2>
             <!--Carousel Wrapper-->
             <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
@@ -295,19 +277,21 @@
             <p>Photos by <a href="https://hayleyelizabeth.photography/">Hayley Elizabeth Photography</a></p>
         </section>
 
-        <!-- <img class="divider" src="images/flowers2.png" alt="flowers" />
+        <img class="divider" src="images/flowers2.png" alt="flowers" />
 
-        <section id="minneapolis" class="xtarget">
+        <section id="minneapolis">
             <h2 class="title">minneapolis</h2>
-            <p></p>
-        </section> -->
+            <img class="mpls" src="images/mpls-sunset.jpg" alt="minneapolis" />
+            <div class="mpls-info">
+                <span>Planning for your visit:</span>
+                    <ul>
+                        <li><a href="https://www.tripadvisor.com/Attractions-g43323-Activities-Minneapolis_Minnesota.html" target="_blank">Things to do in Minneapolis / Trip Advisor</a></li>
+                    </ul>
+                <p>Covid Info: <a href="https://staysafe.mn.gov/" target="_blank">StaySafeMN</a></p>
+            </div>
+        </section>
 
-        <!-- <img class="divider" src="images/flowers2.png" alt="flowers" />
-
-        <section id="registry" class="xtarget">
-            <h2 class="title">registry</h2>
-            <p>coming soon</p>
-        </section> -->
+        <!-- <img class="divider" src="images/flowers2.png" alt="flowers" /> -->
 
     </main>
 
@@ -331,19 +315,6 @@
                     panel.style.maxHeight = panel.scrollHeight + "px";
                 }
             });
-        }
-    </script>
-    <script>
-        window.onscroll = function () { navbarFunction() };
-        const navbar = document.getElementById("navbar");
-        const sticky = navbar.offsetTop;
-
-        function navbarFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
         }
     </script>
 
